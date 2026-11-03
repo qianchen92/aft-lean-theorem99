@@ -1,0 +1,467 @@
+{
+  "date": "2026-11-03",
+  "scope": "Current main.tex input chain and semantic macros; separate from frozen V7",
+  "target": "thm:df-constructive-aft",
+  "files": {
+    "chapters/LAR.tex": "d67cc9e999c5af52836cbbbf06bcfa2a1385e540630b24f548570b16a8433179",
+    "chapters/abstract.tex": "b773c6a825b87bcbca36575f0a9707aaf606b143f5a0cfa18cd55452eb02ad36",
+    "chapters/appendix-affine-proofs.tex": "7ac633e35ef15261804586ab2df607efb838a66b32f27e15c79ba286529107ff",
+    "chapters/appendix-applications-proofs.tex": "42027846abfc7f78ace7a42706cddee209a988f84be1da0e6d7da025eec70da3",
+    "chapters/appendix-bounded-sampling.tex": "24c563bf1a51dc9def9e9422bd19f0da753d9bc3ea8b49b73cc1bc04e4ba1c1d",
+    "chapters/appendix-calibration-proofs.tex": "0ff723a5ab009c984a2f3492d4afbb57eaadfa8589dea0ee002b270da90e9202",
+    "chapters/appendix-direct-fourier-calibration.tex": "e8ab5baee5abd7601b270a9aba9fdb02a0d080648fb3ece802127481980018e7",
+    "chapters/appendix-direct-fourier-charge.tex": "79328ed449dd555cd8c016e719812af7ed246df213d0780edcc5a70987479cf8",
+    "chapters/appendix-direct-fourier-cycle.tex": "8e5490d18271fb0e6add8b26bcf7fcd8754c7eabdbbeb1eaceef4c339e4ff04a",
+    "chapters/appendix-direct-fourier-energy.tex": "221f4883dd4a7721da665aed4aff59bbe22eef34d8a686fe3e693fe6c6a15638",
+    "chapters/appendix-direct-fourier-reference.tex": "e2c8ba03a5b97ffa6da655f065ecac2708983cd8a7d795fefef7903db4d7a18f",
+    "chapters/appendix-direct-fourier-tables.tex": "df7ac7e118bafb8c8d14fb2f23879cfee4cc532511a5334ee9b04eae192d006f",
+    "chapters/appendix-direct-fourier-tail.tex": "b930158ba77a9b06598c8e01866beef753d00744ca5416061c1d3b21505e6b87",
+    "chapters/appendix-foundations-proofs.tex": "5a27034ee2e28097130929bff12dcd8baf48ec6fd82d4ece3cc0911ae130cc63",
+    "chapters/appendix-gadget-assembly.tex": "f73fa2dfb6d28daccfb3cb73e8e23a48f22ef591e82213e3cdd53a4a2c97c441",
+    "chapters/appendix-incidence-background.tex": "ff16f9310fea8c8a9e2ca585255bce41b4b0cb7366106f140a2bea22df533cc9",
+    "chapters/appendix-public-placement.tex": "44690d16f725241967c096df930ab9f1e81dfd165207dc70aff98be356ea672c",
+    "chapters/applications.tex": "598950770c802581c354f81e29f6c264a6f86f93903ecd6627dc151c4803cbbc",
+    "chapters/baseline-shift.tex": "8cce6926e9670eb6c81cc1ae8a10dd973cb32cd2422f2afe26923ddfbdffa975",
+    "chapters/body-injection.tex": "9b686d79e086cae40b648e7d6c3b9847124d1610e3cbf38679b805f5d3e64f97",
+    "chapters/direct-fourier-baseline.tex": "5eec250108ff7cdab63b81520959879cc00bbf37ef0538e544c80928804ccc36",
+    "chapters/direct-fourier-implementation.tex": "dade8510fb761dbf82a51c8e5e95bfd9e0703bdb93700d381f7ad1c99b7445fa",
+    "chapters/direct-fourier-matrices.tex": "30391548abdd0ca8fc9564a66604e0eb964f1ef163bbdea3fcc51d627807909d",
+    "chapters/direct-fourier-transport.tex": "999c737557d83e4f9342351b137854d72f58a879058a018d614a0681a81f8ad8",
+    "chapters/discrete-baseline-shift.tex": "e7cd0ba19bd44fd67dae5c85d9a562f086254706b8a435c19e3e65f90a8baf0c",
+    "chapters/discrete-body-injection.tex": "b163dcc0afd24c5359399721b463c2089e226e073cde4dadc70d24ec7b12a8ef",
+    "chapters/discrete-leg-injection.tex": "b0664119b6e17740f59de1021f597bcc7d1f0398bdb1efa04504bcda219d0383",
+    "chapters/discrete-realization.tex": "1297568d37c8242f1914266627971e3e10dff914a0e0167b5bcdbd88a5a3844a",
+    "chapters/finite-dimensional-calibration.tex": "996b761d06632c2abbf7c4baa7e533406024e7694aeb2064534e477c8607e658",
+    "chapters/gaussian-lwe-to-uniform-zero-fiber-lwe.tex": "d2f196266d1f501a50bcbabd17213139d5a518d871ad1c94b1637af5f93cc751",
+    "chapters/introduction.tex": "98dd85c85726ba45171ba75d497652e5866fca9d822e73b9d42b45af893eb634",
+    "chapters/leg-injection.tex": "7927ba57d1ba367034f584cb87936611711575446d3a389cadbe13dac4346eda",
+    "chapters/prelim-affine-maps.tex": "f06b2bb67d4f7541933e2c64e720cf1e77116e158a97a1d61fa036e8a03acfc6",
+    "chapters/prelim-probability.tex": "1b52f850f581d2e1cfdce456f39df51389e080583b1c98759dc28d487a635fc9",
+    "chapters/preliminaries.tex": "2f6bbaeca7f47e28911e4700db4a83347486d13a12f476b37a7cb169d21394ba",
+    "chapters/probabilistic-transport.tex": "353f675fa986301678eab1d254a3f740a52e442b05865a1849298f75ac8de61c",
+    "chapters/queue-injection.tex": "98b5927c0705491098726184ba41c0f27152ece7bae77194d5357f17aed67f72",
+    "chapters/t-aft-instantiation.tex": "2dcd9e78c54454b8d6aec9771f6d567b21f1c3080ce686e634806bc6f1fb2f45",
+    "chapters/uniform-zero-fiber-lwe-to-lar.tex": "1ee43a8e7fbaafbe268d4398034cbab127c5d2116acf32b2bc6bba7b0bc186a4",
+    "command/commands.tex": "0d66a92d4e19b30beb8826b4fb131c65b0f1b873bcafe953418030555b79ce3f",
+    "command/common.tex": "d4bf71b67037a7120294536cd85a49e104537fa03e5054c5d3deaa3b53557e91",
+    "command/font.tex": "aa56beca93515416527cafda76c83e9f3151a2112383747cd04732335f5761d1",
+    "command/legacy-charlier.tex": "ef347992b5735851d974ac380efda33fe86a39518ad17db9dcc48f6a9d8b4b6b",
+    "command/packages.tex": "f5d891a5a2593e2e509b738e60a1216a841e81746eadccca6da2e74b5491fe61",
+    "command/pseudocode.tex": "aa7571cdcd06f3a128f122d24a73433c36e155c2753ffce4f27e213fe9f4327e",
+    "command/theorems.tex": "2777af9d46a3c6064225997483e4b20c44d4a3bb70abcfdad2274d39ac4a00a6",
+    "figures/body-goal.tex": "92c527a74a1551805d731ff38b2fa53d038c8cfeb4900a88fb232569c91697cb",
+    "figures/leg-goal.tex": "ef87f4f749f8049b05a5042b0be17b8550d2a2aeaeafed3eb031e9bcdc4f0e05",
+    "main.tex": "0be8ad34f85006b252c317b80cb8ee98eb9057428b2aa1e69180eec7692c105a"
+  },
+  "alignment_reviews": [
+    {
+      "date": "2026-11-03",
+      "reason": "Concurrent manuscript edits reviewed. LAR exposition, coupling definition, identification proof and introduction were revised; the active direct-Fourier theorem, parameter family, actual-table, cycle and calibration source statements are unchanged. No manuscript files were edited by this proof task.",
+      "files": [
+        {
+          "file": "chapters/LAR.tex",
+          "previous_sha256": "bc45ab0c6053e62195cd836c7993b605496b234346ff8ee2229056fc8bfdc5c2",
+          "sha256": "e7f7cc3d9252517e4ccb7a25245ce7dc4936ee384f90dc5298e39d537da60811"
+        },
+        {
+          "file": "chapters/appendix-applications-proofs.tex",
+          "previous_sha256": "7107a1a6210f0f585ca8cb0ccf827a177c97064cbb6ea52e6fe88fc8769ab30f",
+          "sha256": "2e28438f69ba1c5e441b0c1c8c63584776bdcbf20f9f34bc19ccc5678d8a664a"
+        },
+        {
+          "file": "chapters/appendix-foundations-proofs.tex",
+          "previous_sha256": "f2abfc86de50d76bc125ead51d15cdddd949d23b9891eb15c74c990b3242f554",
+          "sha256": "b4d685696b9e2520a12300011c09288248dbb85d6f06e0760826dcd24ae42f98"
+        },
+        {
+          "file": "chapters/introduction.tex",
+          "previous_sha256": "4a79aef736713f83f4ef651b6832e138239a8e5187b6335d1524598018b9ee43",
+          "sha256": "65462bcbad39cf0f61dcc1d78cadc078b4882d7653d4f6ec8434018296690b41"
+        },
+        {
+          "file": "chapters/prelim-probability.tex",
+          "previous_sha256": "a7a96ff19ee83ef979747f4027eb173b98683233d5bd6ca2ba97ec78574c83b7",
+          "sha256": "adb4f33ffe9608762c8fdddac364799d60446790d2c4e0ebea710258136e6578"
+        },
+        {
+          "file": "chapters/preliminaries.tex",
+          "previous_sha256": "956912c1980779a3e54a9ad028a7aa57df8982f05fb00fa26eae870b385ad07b",
+          "sha256": "914850176643193bc24840d296f9974baa9d7f54221a207c6e71c2f420e8567b"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "reason": "Concurrent edits reviewed: direct-Fourier opening changes tense only; generic calibration paragraph is shortened; AFT interfaces regroup explicit uniform classical PPT/deterministic evaluation and public-input conditions; fixed-order hardness consequence moves into the reduction theorem and its appendix proof. The constructive direct-Fourier theorem statement, public parameter family, table/cycle/calibration estimates and this Lean target are unchanged.",
+      "files": [
+        {
+          "file": "chapters/appendix-foundations-proofs.tex",
+          "previous_sha256": "b4d685696b9e2520a12300011c09288248dbb85d6f06e0760826dcd24ae42f98",
+          "sha256": "a55f2101b10f7f5cf7bd72c9cda9e37e612735fbffffffb2782090389a45f93d"
+        },
+        {
+          "file": "chapters/direct-fourier-transport.tex",
+          "previous_sha256": "bea76c1dfbc9e48f9b888fd0eac366425249a8d556e6179ab81b4bf60d7de212",
+          "sha256": "0119d9ca520f48616d6cb15aacf55f32cf301dc577870878931875a7f2c8e899"
+        },
+        {
+          "file": "chapters/finite-dimensional-calibration.tex",
+          "previous_sha256": "14762f1f9bbe6c7bca47beb49a0acc288d46ec5313564a7ada5984633b33e2ef",
+          "sha256": "9fbd66077a1aefbc3331a9e0fcdf5d04d9d2c14350a7150b73d31ad7779e09a6"
+        },
+        {
+          "file": "chapters/gaussian-lwe-to-uniform-zero-fiber-lwe.tex",
+          "previous_sha256": "54f5b3c52e899be6c2e603039802a06793fe82ef91fe5b15ae90f1f837903f86",
+          "sha256": "e889a80bbcb29ddb6177215f073172b5db3e88f56cfd95aaf06dbab17d6583d3"
+        },
+        {
+          "file": "chapters/uniform-zero-fiber-lwe-to-lar.tex",
+          "previous_sha256": "2ee70e845514fd8812fecfa4c9847edb3f1867a9b8ac67bd082896bfd566f6c5",
+          "sha256": "fda4c5bb0ada2310b4aac91dbf8d2edd6d49abff615e798b8694864d19cdadcd"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "reason": "Concurrent edits reviewed against dceabea and current working files: baseline, matrix and implementation exposition is expanded or regrouped without changing the proposal, control pools, response bounds or sampler contract. The ambient Fourier cancellation-plus-tail criterion is promoted to lem:df-joint-target and its proof is added to the energy appendix; its mathematical premises and conclusion are the same Parseval/support-tail composition being formalized. The constructive AFT theorem, public parameters, actual-table estimates and protected-cycle estimates are unchanged. This proof task did not edit these manuscript files.",
+      "files": [
+        {
+          "file": "chapters/appendix-direct-fourier-energy.tex",
+          "previous_sha256": "404257b36e55903315b2750c4f16090b3cc779a02b194b3a2914684703ea3d45",
+          "sha256": "e804e0bc020220c9cd4f2289cd00e4222fa8d4a86ae887ee6826d7c7165bd280"
+        },
+        {
+          "file": "chapters/direct-fourier-baseline.tex",
+          "previous_sha256": "04ef392413a772ffa66ba6a2ddd4dc21397ae9d8f023b58a15ab2b9653f1bb91",
+          "sha256": "c5ab30f41261b2672ed4cd1d046a3729212d9172e05b2ae6e3b8763b5aec64d7"
+        },
+        {
+          "file": "chapters/direct-fourier-implementation.tex",
+          "previous_sha256": "e5c9d195c5f2ebdb12e70f3fc31353605b1b81ace48adee7ca027cb689033140",
+          "sha256": "dade8510fb761dbf82a51c8e5e95bfd9e0703bdb93700d381f7ad1c99b7445fa"
+        },
+        {
+          "file": "chapters/direct-fourier-matrices.tex",
+          "previous_sha256": "2e7d3ab47530c007d3dde61f970c533ec27051b97e0a1fd751a607d35a53a519",
+          "sha256": "c081de8072337d5ba410eb078f01bf91fadd43a6a38ea959fa31151529164518"
+        },
+        {
+          "file": "chapters/direct-fourier-transport.tex",
+          "previous_sha256": "0119d9ca520f48616d6cb15aacf55f32cf301dc577870878931875a7f2c8e899",
+          "sha256": "73f61fc8eb30072db1099c8caf4756bdc77e11cf62ebbef41a070bf305750308"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "reason": "Reviewed concurrent changes: the literal character polynomial, ordered tensor normalization and weighted Fock norm move from the energy appendix into the new main-text def:df-weighted-character-norm; tail references follow that unique definition. Formulas and normalization are unchanged and match CharacterPolynomial and FourierSupportIsometry. The previously reviewed joint-target criterion and proof remain. The constructive AFT theorem, parameter family, actual-table and cycle estimates are unchanged. No manuscript files edited by this Lean task.",
+      "files": [
+        {
+          "file": "chapters/appendix-direct-fourier-energy.tex",
+          "previous_sha256": "e804e0bc020220c9cd4f2289cd00e4222fa8d4a86ae887ee6826d7c7165bd280",
+          "sha256": "b6b2ac84a51559a26ecbe26177d4a1d0456ec3ec16b1faf1fb59b3974483809a"
+        },
+        {
+          "file": "chapters/appendix-direct-fourier-tail.tex",
+          "previous_sha256": "2655d2b070dcd32c0ac35a7942145afd5465db101640bd974d859f08176642d7",
+          "sha256": "74f705dc5e3d025e18cc56a7f2606e91ce5a700c1ac9a0d03182e9b0df067cc2"
+        },
+        {
+          "file": "chapters/direct-fourier-transport.tex",
+          "previous_sha256": "73f61fc8eb30072db1099c8caf4756bdc77e11cf62ebbef41a070bf305750308",
+          "sha256": "321fad9a3aa6c4f491602ef486ab66f420bc93fe711b0eb2d16fa9f49653445d"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "reason": "Reviewed concurrent manuscript changes against the saved .lake/current-manuscript-snapshot. Two new appendix wrapper files regroup the same energy/placement/cycle and calibration/table inputs; included in this manifest. Other target-related changes adjust section depths, Needspace/samepage/grouping, frame splitting and page breaks without changing mathematical statements or estimates. Public-charge text is moved verbatim. A separate application search-to-decision proof adds fresh-sample candidate verification; it is outside the constructive AFT formalization target. All remaining changed source lines are layout/heading controls. This proof task made no LaTeX edits.",
+      "files": [
+        {
+          "file": "chapters/LAR.tex",
+          "previous_sha256": "e7f7cc3d9252517e4ccb7a25245ce7dc4936ee384f90dc5298e39d537da60811",
+          "sha256": "8d2080e4a2c08ed9f1870aa1833a418f2e5bb316fabb9d398c44aaca843185a0"
+        },
+        {
+          "file": "chapters/appendix-affine-proofs.tex",
+          "previous_sha256": "65383d5a7520f637bb10057dd524884d153b3f5ac2a7123932fcabf9e71f9a8b",
+          "sha256": "7ac633e35ef15261804586ab2df607efb838a66b32f27e15c79ba286529107ff"
+        },
+        {
+          "file": "chapters/appendix-applications-proofs.tex",
+          "previous_sha256": "2e28438f69ba1c5e441b0c1c8c63584776bdcbf20f9f34bc19ccc5678d8a664a",
+          "sha256": "42027846abfc7f78ace7a42706cddee209a988f84be1da0e6d7da025eec70da3"
+        },
+        {
+          "file": "chapters/appendix-bounded-sampling.tex",
+          "previous_sha256": "bedc21fc124492caa1c72a06be323eb6ead93971fe4339ab06d17f2de87d5ccd",
+          "sha256": "14d1c3f9e1d8f26013f7a8e622e0097f75a492a50c828e730b2779fc3c0ad987"
+        },
+        {
+          "file": "chapters/appendix-calibration-proofs.tex",
+          "previous_sha256": "78569c0bc1e7566d97fa418ae380972964a2c6f70e6608992c3a109c937e8c96",
+          "sha256": "0ff723a5ab009c984a2f3492d4afbb57eaadfa8589dea0ee002b270da90e9202"
+        },
+        {
+          "file": "chapters/appendix-direct-fourier-charge.tex",
+          "previous_sha256": "e8e33b33ae926f33a8d8da0315d545ce8bbcb99e327d3d925eafcac8a2f08229",
+          "sha256": "79328ed449dd555cd8c016e719812af7ed246df213d0780edcc5a70987479cf8"
+        },
+        {
+          "file": "chapters/appendix-direct-fourier-cycle.tex",
+          "previous_sha256": "8001785a4cbad72dcb82f1b856997f5f928ebe507209cc7dbe02d942de28654c",
+          "sha256": "8e5490d18271fb0e6add8b26bcf7fcd8754c7eabdbbeb1eaceef4c339e4ff04a"
+        },
+        {
+          "file": "chapters/appendix-direct-fourier-energy.tex",
+          "previous_sha256": "b6b2ac84a51559a26ecbe26177d4a1d0456ec3ec16b1faf1fb59b3974483809a",
+          "sha256": "221f4883dd4a7721da665aed4aff59bbe22eef34d8a686fe3e693fe6c6a15638"
+        },
+        {
+          "file": "chapters/appendix-direct-fourier-tables.tex",
+          "previous_sha256": "367c82d003d8f7a214956537e3c9b40edfb856a70cd3fe85cc3d54e982acc8b8",
+          "sha256": "ba9d1171d22ffe08b8d2ab7bc6fcce9ebed9a25eda13b823d8d7f1dc746a5910"
+        },
+        {
+          "file": "chapters/appendix-direct-fourier-tail.tex",
+          "previous_sha256": "74f705dc5e3d025e18cc56a7f2606e91ce5a700c1ac9a0d03182e9b0df067cc2",
+          "sha256": "41b924530799cb082b7b716696b5257f05f297795e4eb2a9b193d670725784cf"
+        },
+        {
+          "file": "chapters/appendix-foundations-proofs.tex",
+          "previous_sha256": "a55f2101b10f7f5cf7bd72c9cda9e37e612735fbffffffb2782090389a45f93d",
+          "sha256": "5a27034ee2e28097130929bff12dcd8baf48ec6fd82d4ece3cc0911ae130cc63"
+        },
+        {
+          "file": "chapters/appendix-incidence-background.tex",
+          "previous_sha256": "d1f9cb0b30c9626fe22619b1bdb7d33044bb86eec924e34d467b9febd932119d",
+          "sha256": "ff16f9310fea8c8a9e2ca585255bce41b4b0cb7366106f140a2bea22df533cc9"
+        },
+        {
+          "file": "chapters/appendix-public-placement.tex",
+          "previous_sha256": "5cd98d7ccc289cbaabe5ad438b46c9e1fcc77dab96818cf0f3cb72d39b1ee0bb",
+          "sha256": "44690d16f725241967c096df930ab9f1e81dfd165207dc70aff98be356ea672c"
+        },
+        {
+          "file": "chapters/applications.tex",
+          "previous_sha256": "f33a46f3f421a41b67ef58e40f4e11edc4d7a10a1930a0bdea1e7cd4e5ad656c",
+          "sha256": "598950770c802581c354f81e29f6c264a6f86f93903ecd6627dc151c4803cbbc"
+        },
+        {
+          "file": "chapters/baseline-shift.tex",
+          "previous_sha256": "1a1fe458b95870efe8a5cb433193b89071d1bb76c8586c3f9bd9a80d5b14c91b",
+          "sha256": "55255f8449b8b74b385c2abd4fb1653ad3e0e2ad0b96b08c8c861971bb9ab2ab"
+        },
+        {
+          "file": "chapters/body-injection.tex",
+          "previous_sha256": "6f1d121745784031a551e9b42f95a336182997f52eb24e0215419391eadb9f14",
+          "sha256": "9b686d79e086cae40b648e7d6c3b9847124d1610e3cbf38679b805f5d3e64f97"
+        },
+        {
+          "file": "chapters/direct-fourier-baseline.tex",
+          "previous_sha256": "c5ab30f41261b2672ed4cd1d046a3729212d9172e05b2ae6e3b8763b5aec64d7",
+          "sha256": "1adbaa93f2885d268fc3e27e63f723a0679cf27376b04414e82f6a9d21c4c299"
+        },
+        {
+          "file": "chapters/direct-fourier-matrices.tex",
+          "previous_sha256": "c081de8072337d5ba410eb078f01bf91fadd43a6a38ea959fa31151529164518",
+          "sha256": "30391548abdd0ca8fc9564a66604e0eb964f1ef163bbdea3fcc51d627807909d"
+        },
+        {
+          "file": "chapters/direct-fourier-transport.tex",
+          "previous_sha256": "321fad9a3aa6c4f491602ef486ab66f420bc93fe711b0eb2d16fa9f49653445d",
+          "sha256": "c97582066a00d56f36f9443c8f3b7a7606b518a5969bbbbd6d7eddd6a9965b31"
+        },
+        {
+          "file": "chapters/discrete-baseline-shift.tex",
+          "previous_sha256": "3273f11936776566dbc15a43ef7ca77c29a4fa50fc19b7ce178830d077a8817d",
+          "sha256": "e7cd0ba19bd44fd67dae5c85d9a562f086254706b8a435c19e3e65f90a8baf0c"
+        },
+        {
+          "file": "chapters/discrete-body-injection.tex",
+          "previous_sha256": "0a15a2ecb86ff013fbc4e6176558d9e2efd25a3c7686080891cfb11422c016d2",
+          "sha256": "b163dcc0afd24c5359399721b463c2089e226e073cde4dadc70d24ec7b12a8ef"
+        },
+        {
+          "file": "chapters/discrete-leg-injection.tex",
+          "previous_sha256": "4b4523164d31cb280b5cd2a744b15b329c2e7e098fbb0bdc2084698d3294dfd3",
+          "sha256": "b0664119b6e17740f59de1021f597bcc7d1f0398bdb1efa04504bcda219d0383"
+        },
+        {
+          "file": "chapters/discrete-realization.tex",
+          "previous_sha256": "591b28850c8fbc147e011ac8f00a0f343460e745ddc0e525b2ff06e2c7f6d060",
+          "sha256": "1297568d37c8242f1914266627971e3e10dff914a0e0167b5bcdbd88a5a3844a"
+        },
+        {
+          "file": "chapters/gaussian-lwe-to-uniform-zero-fiber-lwe.tex",
+          "previous_sha256": "e889a80bbcb29ddb6177215f073172b5db3e88f56cfd95aaf06dbab17d6583d3",
+          "sha256": "d2f196266d1f501a50bcbabd17213139d5a518d871ad1c94b1637af5f93cc751"
+        },
+        {
+          "file": "chapters/introduction.tex",
+          "previous_sha256": "65462bcbad39cf0f61dcc1d78cadc078b4882d7653d4f6ec8434018296690b41",
+          "sha256": "044da6031f0904bf99ce1d15c1e9e744b868f8219dfbb0bd94fd26827c112b51"
+        },
+        {
+          "file": "chapters/leg-injection.tex",
+          "previous_sha256": "9804009d93344ff2a9b41c2f542736cd96152dad36526a9d2fd96ab2d0f34ccb",
+          "sha256": "d940e27ea17ec36eefbd60632b7ec626a0f9186cd79c01d8e183a068f3880117"
+        },
+        {
+          "file": "chapters/prelim-affine-maps.tex",
+          "previous_sha256": "269e8aaae3a67d47f52f7eebfe91950785e4ce90d7b243407df655a8cb04ced6",
+          "sha256": "f06b2bb67d4f7541933e2c64e720cf1e77116e158a97a1d61fa036e8a03acfc6"
+        },
+        {
+          "file": "chapters/prelim-probability.tex",
+          "previous_sha256": "adb4f33ffe9608762c8fdddac364799d60446790d2c4e0ebea710258136e6578",
+          "sha256": "1b52f850f581d2e1cfdce456f39df51389e080583b1c98759dc28d487a635fc9"
+        },
+        {
+          "file": "chapters/preliminaries.tex",
+          "previous_sha256": "914850176643193bc24840d296f9974baa9d7f54221a207c6e71c2f420e8567b",
+          "sha256": "2f6bbaeca7f47e28911e4700db4a83347486d13a12f476b37a7cb169d21394ba"
+        },
+        {
+          "file": "chapters/probabilistic-transport.tex",
+          "previous_sha256": "04af5dfe1dde6037c2da38bafc59e6635b98b14ac01cd224c8066923a8ebcf2f",
+          "sha256": "9bc8fbcfc8941c7c11f05dccded40e8439148881cfa6ead7d57e507607b6a8a8"
+        },
+        {
+          "file": "chapters/t-aft-instantiation.tex",
+          "previous_sha256": "5f6ca928b164a0aef35d4849ce7433dddf0e3d5f27ffdda37ba654ac46c69599",
+          "sha256": "e599c3d608f8c9a0c42ab637c01daae8578c59e55d958fc7a1ff77a3fc19940c"
+        },
+        {
+          "file": "chapters/uniform-zero-fiber-lwe-to-lar.tex",
+          "previous_sha256": "fda4c5bb0ada2310b4aac91dbf8d2edd6d49abff615e798b8694864d19cdadcd",
+          "sha256": "1ee43a8e7fbaafbe268d4398034cbab127c5d2116acf32b2bc6bba7b0bc186a4"
+        },
+        {
+          "file": "command/theorems.tex",
+          "previous_sha256": "2fb04cce23ea4af357980f7a4cb3faef547ee1bd04569685ef92f57eb87e8529",
+          "sha256": "2777af9d46a3c6064225997483e4b20c44d4a3bb70abcfdad2274d39ac4a00a6"
+        },
+        {
+          "file": "main.tex",
+          "previous_sha256": "b9d734c4b2be92e5fadd0b5fd3fbfc4e98d3bbd51cd63ef25cf14841b66bfd69",
+          "sha256": "0be8ad34f85006b252c317b80cb8ee98eb9057428b2aa1e69180eec7692c105a"
+        },
+        {
+          "file": "chapters/appendix-direct-fourier-reference.tex",
+          "previous_sha256": null,
+          "sha256": "e2c8ba03a5b97ffa6da655f065ecac2708983cd8a7d795fefef7903db4d7a18f"
+        },
+        {
+          "file": "chapters/appendix-direct-fourier-calibration.tex",
+          "previous_sha256": null,
+          "sha256": "e8ab5baee5abd7601b270a9aba9fdb02a0d080648fb3ece802127481980018e7"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "reason": "Reviewed external commit eddc4b4 in full; previous hashes match its parent. The two proofs expand the unchanged root-defect construction and full weighted Fourier argument: exact joint root/control kernels, both tagged roots consumed in one paired group, uniform queue and placement bounds, and full endpoint normalization are explicit. Statements and parameters are unchanged. Current checked modules prove the actual independent two-role raising stability and complete constructed output Fock bound; full root coefficient operator and coefficientWeight pushforward identity remain explicit obligations. No LaTeX was edited by this proof task.",
+      "files": [
+        {
+          "file": "chapters/appendix-direct-fourier-tables.tex",
+          "previous_sha256": "ba9d1171d22ffe08b8d2ab7bc6fcce9ebed9a25eda13b823d8d7f1dc746a5910",
+          "sha256": "df7ac7e118bafb8c8d14fb2f23879cfee4cc532511a5334ee9b04eae192d006f"
+        },
+        {
+          "file": "chapters/appendix-direct-fourier-tail.tex",
+          "previous_sha256": "41b924530799cb082b7b716696b5257f05f297795e4eb2a9b193d670725784cf",
+          "sha256": "b930158ba77a9b06598c8e01866beef753d00744ca5416061c1d3b21505e6b87"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "reason": "Reviewed external commit 30df292 in full for the three changed sources. Edits explain public-only weights and simultaneous local protected-input constraints; distinguish conditional averaged Fourier response, signed global calibration, clipping and fixed-placement charge rejection; and restate LAR quotient encoding and rank-one reduction in the introduction. Formal calibration statements, current AFT target, parameter definitions and technical root/tail conclusions are unchanged. Exact independent two-role response image and actual public mass connection remain separately tracked in Lean; no completeness is inferred from exposition. This proof task made no LaTeX edits.",
+      "files": [
+        {
+          "file": "chapters/finite-dimensional-calibration.tex",
+          "previous_sha256": "9fbd66077a1aefbc3331a9e0fcdf5d04d9d2c14350a7150b73d31ad7779e09a6",
+          "sha256": "984b4bedb72f42c93f6453427e57bf85172fe9efa6b34808b710477a4304b78d"
+        },
+        {
+          "file": "chapters/introduction.tex",
+          "previous_sha256": "044da6031f0904bf99ce1d15c1e9e744b868f8219dfbb0bd94fd26827c112b51",
+          "sha256": "6dc7b489d218b4e79230ab987e1fc4142938a54702e6dfa9d9058d3eae580415"
+        },
+        {
+          "file": "chapters/probabilistic-transport.tex",
+          "previous_sha256": "9bc8fbcfc8941c7c11f05dccded40e8439148881cfa6ead7d57e507607b6a8a8",
+          "sha256": "69b7bcb71c0124b48c14370d9a96f4618341f06902838de4d5ac0413034148ed"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "reason": "Reviewed all four manuscript diffs in external commit faf8e31; prior hashes match its parent. Edits explain LAR integer shifts, the marked companion cancellation and rank-one diffuse residual, three sources of coefficient-response defect, the complete product Fourier-tail argument, and endpoint carry semantics. The formal target, public parameter family, quantitative statements and proof obligations are unchanged. These explanations do not supply the still-missing full root-response stability, calibrated-weight construction, or finite-bit PPT proof. No LaTeX was changed by this proof task.",
+      "files": [
+        {
+          "file": "chapters/LAR.tex",
+          "previous_sha256": "8d2080e4a2c08ed9f1870aa1833a418f2e5bb316fabb9d398c44aaca843185a0",
+          "sha256": "d67cc9e999c5af52836cbbbf06bcfa2a1385e540630b24f548570b16a8433179"
+        },
+        {
+          "file": "chapters/direct-fourier-baseline.tex",
+          "previous_sha256": "1adbaa93f2885d268fc3e27e63f723a0679cf27376b04414e82f6a9d21c4c299",
+          "sha256": "5eec250108ff7cdab63b81520959879cc00bbf37ef0538e544c80928804ccc36"
+        },
+        {
+          "file": "chapters/introduction.tex",
+          "previous_sha256": "6dc7b489d218b4e79230ab987e1fc4142938a54702e6dfa9d9058d3eae580415",
+          "sha256": "98dd85c85726ba45171ba75d497652e5866fca9d822e73b9d42b45af893eb634"
+        },
+        {
+          "file": "chapters/t-aft-instantiation.tex",
+          "previous_sha256": "e599c3d608f8c9a0c42ab637c01daae8578c59e55d958fc7a1ff77a3fc19940c",
+          "sha256": "cc956b4a03a06d273c846b95fe9c54f3bd997bf8f96f5215ba8bc9527fa1fdd8"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "reason": "Reviewed the complete manuscript diff in concurrent commit c30db79. It explains ordered-tensor normalization, distinguishes coefficients from synthesized public weights, clarifies fixed-placement rejection and independent body permutation, expands existing local-positivity and shared-cycle mechanisms, and explains the unchanged incidence/closure assembly. The formal target, parameters, quantitative bounds and probability quantifiers are unchanged. No manuscript file was edited by the Lean proof task.",
+      "files": [
+        {
+          "file": "chapters/appendix-bounded-sampling.tex",
+          "previous_sha256": "14d1c3f9e1d8f26013f7a8e622e0097f75a492a50c828e730b2779fc3c0ad987",
+          "sha256": "24c563bf1a51dc9def9e9422bd19f0da753d9bc3ea8b49b73cc1bc04e4ba1c1d"
+        },
+        {
+          "file": "chapters/baseline-shift.tex",
+          "previous_sha256": "55255f8449b8b74b385c2abd4fb1653ad3e0e2ad0b96b08c8c861971bb9ab2ab",
+          "sha256": "8cce6926e9670eb6c81cc1ae8a10dd973cb32cd2422f2afe26923ddfbdffa975"
+        },
+        {
+          "file": "chapters/direct-fourier-transport.tex",
+          "previous_sha256": "c97582066a00d56f36f9443c8f3b7a7606b518a5969bbbbd6d7eddd6a9965b31",
+          "sha256": "999c737557d83e4f9342351b137854d72f58a879058a018d614a0681a81f8ad8"
+        },
+        {
+          "file": "chapters/finite-dimensional-calibration.tex",
+          "previous_sha256": "984b4bedb72f42c93f6453427e57bf85172fe9efa6b34808b710477a4304b78d",
+          "sha256": "996b761d06632c2abbf7c4baa7e533406024e7694aeb2064534e477c8607e658"
+        },
+        {
+          "file": "chapters/leg-injection.tex",
+          "previous_sha256": "d940e27ea17ec36eefbd60632b7ec626a0f9186cd79c01d8e183a068f3880117",
+          "sha256": "7927ba57d1ba367034f584cb87936611711575446d3a389cadbe13dac4346eda"
+        },
+        {
+          "file": "chapters/probabilistic-transport.tex",
+          "previous_sha256": "69b7bcb71c0124b48c14370d9a96f4618341f06902838de4d5ac0413034148ed",
+          "sha256": "353f675fa986301678eab1d254a3f740a52e442b05865a1849298f75ac8de61c"
+        },
+        {
+          "file": "chapters/t-aft-instantiation.tex",
+          "previous_sha256": "cc956b4a03a06d273c846b95fe9c54f3bd997bf8f96f5215ba8bc9527fa1fdd8",
+          "sha256": "2dcd9e78c54454b8d6aec9771f6d567b21f1c3080ce686e634806bc6f1fb2f45"
+        }
+      ]
+    }
+  ]
+}

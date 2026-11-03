@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-04",
+  "upstream_commit": "176d128e3361f975a3c7e2f889fdc5f2c96c1d29",
+  "upstream_check": {
+    "command": "./check-current.sh",
+    "exit_code": 0,
+    "manuscript_files": 49
+  },
+  "standalone_check": {
+    "command": "./check.sh",
+    "exit_code": 0,
+    "build_jobs": 9842,
+    "snapshot_modules": 1805,
+    "root_declarations_audited": 3,
+    "current_declarations_audited": 20671,
+    "reused_declarations_audited": 17948,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "files": {
+    "Theorem99.lean": "eb51bbc4906366ad0377861198f39f527077a14ed8468a64449dd46aecb9ea89",
+    "Audit.lean": "29109bbee5eec8415e76d2f0ca8acbd1d3e76162ea6528887bd2cd6f707f8db8",
+    "lakefile.toml": "84254506d89c30f8b462d8a5900796784bd141270c286cb53947c9cd188ffd90",
+    "lake-manifest.json": "3dd54175750cf856505ab65c30dd79123efcdd5acad0d4bb9277b3ee4d6adcd9",
+    "lean-toolchain": "9cfb1ab9951dba1fe8ba3df3ed50b53a0aa89e6554e929bdceae0a5a1c6563eb",
+    "check.sh": "cac91099b3a463bc7a4597ea9ec11531b31eba0d4188f26a43d5a612c199ba4b",
+    "scripts/verify-snapshot.py": "835ef34be1103b313252f40e258d93410572043befc92c76283567d6688cbe19"
+  }
+}
