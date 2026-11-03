@@ -1,4 +1,3 @@
-import CurrentAFT
 import Theorem99
 import Lean.Util.CollectAxioms
 

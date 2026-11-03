@@ -1,4 +1,7 @@
-# Verified standalone snapshot (2026-11-04)
+# Initial standalone snapshot (2026-11-04)
+
+This record describes the initial snapshot before dependency pruning.
+See [cleanup verification](cleanup-2026-11-04.md) for the current inventory and audit.
 
 The upstream Lean directory at commit
 `176d128e3361f975a3c7e2f889fdc5f2c96c1d29` passed its existing

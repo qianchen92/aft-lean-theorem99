@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-04",
+  "base_commit": "856af6834a01216b4d8a2f94d8c9d547c43f9d35",
+  "scope": "Only standalone aft-lean-theorem99 repository",
+  "roots": [
+    "Theorem99",
+    "Audit"
+  ],
+  "deleted_lean_files": 13,
+  "retained_upstream_modules": 1792,
+  "retained_lean_files": 1794,
+  "root_theorem_unchanged": true,
+  "check": {
+    "command": "./check.sh",
+    "exit_code": 0,
+    "build_jobs": 9828,
+    "root_declarations": 3,
+    "current_declarations": 20544,
+    "reused_declarations": 17947,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

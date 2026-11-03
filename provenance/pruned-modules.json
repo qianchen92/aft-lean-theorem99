@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-04",
+  "base_commit": "856af6834a01216b4d8a2f94d8c9d547c43f9d35",
+  "roots": [
+    "Theorem99",
+    "Audit"
+  ],
+  "reason": "Not reachable from Theorem99 after removing the broad CurrentAFT aggregate from the audit.",
+  "files": {
+    "CurrentAFT.lean": "86df329b451df3f5e7cb89eb3f121c945bfacc08bfb8b9d1d401adc595f5429f",
+    "CurrentAFT/CharacterPolynomial.lean": "65acd6446c1a2b53d6d4ebd6f1aa0beef84b711cda26f78e887e805ccdf8d3b5",
+    "CurrentAFT/ChargeCharacters.lean": "0a2b8e1889dc4ff2a9bbeb0b5340b89766d00dde510873efa5f2ba9ae6199889",
+    "CurrentAFT/GroupedKernelPolynomial.lean": "1e3c771a7c0f00a4018d3903bd499a7e73ea87c6e51005137518928b8e5609c8",
+    "CurrentAFT/IndependentCalibration.lean": "6d5607d99a98fd76be80b19e2726ecc7385d72bc281927aa05f5b3c8026307f0",
+    "CurrentAFT/JointTarget.lean": "d2132589263e2dd6897464f71944110b4cd255cba0dacd202a9f5df80ec13005",
+    "CurrentAFT/NumericalCore.lean": "9297b828148c74d6af6def6cbf74b0d22f81c7e95651d8445759cefd34fcfd89",
+    "CurrentAFT/RootIndependentFamilyPhysical.lean": "cf620deb597b38e5fcfe6a00f3ec9c8e92410c9611e9589b446eddc25e985f7a",
+    "CurrentAFT/RootSingletonBudget.lean": "e09cd71f3ebf24ea11ed68acbc6484147eb341bf1dcc9a6862e8baf4fc605a56",
+    "CurrentAFT/RootSingletonPhysical.lean": "851d4002330315f05780487fc8ce6ffce93fed273542a00797fee0ddadb0d558",
+    "CurrentAFT/RootSingletonTensor.lean": "87b8c9a15b9974c8b6601d2b63cd9e0bd3d664d02a8d11beb9f4599b825ef959",
+    "CurrentAFT/StableCalibration.lean": "394a670a8ad88ef841632b78892742a437add531d159f4af71a274ab77f1e01b",
+    "CurrentAFT/TransportEstimate.lean": "9fbd57991400ea59fb003b33cb3c2210df10c0249bc22e02dc6d8cb5e6d91623"
+  }
+}

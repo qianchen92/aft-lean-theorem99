@@ -41,7 +41,7 @@ lake exe cache get
 
 使用已提交的 `lean-toolchain` 和 `lake-manifest.json`，不要先运行 `lake update`。工具链固定为 Lean `v4.29.0-rc1`；mathlib 固定在 `33a7291a345d718bca41f8ae8a9bae365d8f2a3e`。验证入口和审计规则以 `check.sh` 及审计源码为准。
 
-本快照已通过独立构建和公理审计，见 [验证记录](provenance/verification.md)。
+本快照的初次构建与审计见 [原始验证记录](provenance/verification.md)；精简后的源码清单和复验见 [清理验证记录](provenance/cleanup-2026-11-04.md)。
 
 ## 复杂度结论的边界
 
@@ -51,6 +51,8 @@ Lean 检查所编码命题的证明；论文与形式化规格的对应仍需阅
 
 ## 来源
 
-上游论文仓库提交：`176d128e3361f975a3c7e2f889fdc5f2c96c1d29`。导出的原证明模块保留原内容；根入口及独立验证文件用于本仓库导航与复现。
+上游论文仓库提交：`176d128e3361f975a3c7e2f889fdc5f2c96c1d29`。保留的原证明模块逐字节保持不变；根入口及独立验证文件用于本仓库导航与复现。当前只保留 `Theorem99.lean` 及审计所需的完整依赖闭包，共 1794 个 Lean 文件。仍被证明调用的旧命名模块继续保留，不能按文件名中的版本标记删除。
 
 原模块文件快照见 [upstream-lean-snapshot.json](provenance/upstream-lean-snapshot.json)，论文对齐记录见 [upstream-manuscript-manifest.json](provenance/upstream-manuscript-manifest.json)。本仓库仅包含证明快照，不包含论文 LaTeX、PDF、`.lake` 缓存或历史 Git 记录；首次构建会在本地生成 `.lake`。
+
+清理时删除了 13 个未被根定理使用的模块，具体路径及原始哈希见 [pruned-modules.json](provenance/pruned-modules.json)。`check.sh` 同时检查保留文件的原始哈希、删除清单和依赖可达性，缺失依赖或新增孤立模块都会使检查失败。
