@@ -16,7 +16,8 @@ The added root statement was checked separately, then `./check.sh` exited 0:
   `sorryAx` or custom axiom makes the audit fail.
 - Working-tree and staged diff whitespace checks passed.
 
-Existing upstream linter warnings are retained. The new root module compiled
+Existing upstream linter warnings and legacy whitespace are retained byte-for-byte.
+Diff checks apply to changes relative to the imported snapshot. The new root module compiled
 without warnings. Builds reused local compilation caches; those caches and
 all manuscript files are excluded from Git. Dependencies and toolchain are
 locked, and a new clone can obtain dependency caches with `lake exe cache get`.
