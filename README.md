@@ -1,58 +1,60 @@
 # Theorem 9.9: Gaussian AFT in Lean
 
-这是 Learning with Algebraic Rounding 论文中定理 9.9 的独立 Lean 证明快照。先打开根目录的 **[Theorem99.lean](Theorem99.lean)**，阅读 `theorem_9_9` 的完整声明与证明，即可核对主要量词和结论。
+This is a standalone Lean proof snapshot for Theorem 9.9 of the Learning with Algebraic Rounding paper, using an explicit counted binary-operation model. Start with **[Theorem99.lean](Theorem99.lean)**: its `theorem_9_9` statement collects the main quantifiers and guarantees in one place.
 
-This repository formalizes Theorem 9.9 in an explicit counted binary-operation model. It contains the proof sources and locked dependencies, without the manuscript or generated build artifacts.
+The repository contains proof sources and locked dependency specifications. It does not include the manuscript or generated build artifacts.
 
-## 从哪里看
+## Where to start
 
-- **[`theorem_9_9`](Theorem99.lean)**：对每个固定精度阶，存在同一组不依赖安全参数的有限程序数据；汇总多项式公平随机带长度、每条随机带的最坏操作成本、整数仿射输出与模可逆性、实际执行的输出律、最终逆多项式精度及论文中的展开误差界。它还列出可忽略余项和变换后公开矩阵的精确均匀性与独立性。
-- **[`evaluator_correct_and_polynomial`](Theorem99.lean)**：确定性仿射求值器的正确性与成本，适用于任意相应形状的整数矩阵、偏移和输入编码；成本多项式依赖安全参数及实际输入编码长度。
-- [ActualConstructiveSampler.lean](CurrentAFT/ActualConstructiveSampler.lean)：原顶层构造、精度和定量误差定理。
-- [ActualConstructiveProgram.lean](CurrentAFT/ActualConstructiveProgram.lean)：实际程序、校准表生产与源独立公开实验的连接。
-- [ActualAffineEvaluator.lean](CurrentAFT/ActualAffineEvaluator.lean)：独立确定性求值器。
+- **[`theorem_9_9`](Theorem99.lean)**: for each fixed accuracy order, one set of finite program data, independent of the security parameter, supplies polynomial fair-bit tape length and worst-case work, integral affine outputs and modular invertibility on every tape, the actual output law, eventual inverse-polynomial accuracy, and the paper's quantitative error bound. The statement also includes negligible remainders and exact uniformity and independence of the transformed public matrix.
+- **[`evaluator_correct_and_polynomial`](Theorem99.lean)**: correctness and polynomial cost of the deterministic affine evaluator on arbitrary integer matrix, offset, and input encodings of the appropriate shape. Its cost is polynomial in the security parameter plus the actual encoding lengths.
+- [ActualConstructiveSampler.lean](CurrentAFT/ActualConstructiveSampler.lean): the underlying constructive existence, accuracy, and quantitative error theorems.
+- [ActualConstructiveProgram.lean](CurrentAFT/ActualConstructiveProgram.lean): the actual program and its connections to calibration-table generation and the source-independent public experiment.
+- [ActualAffineEvaluator.lean](CurrentAFT/ActualAffineEvaluator.lean): the independent deterministic evaluator.
 
-固定精度阶先于程序数据和多项式预算选定；同一公开参数族随后用于所有安全参数。结论不要求一个以精度阶为输入、同时对所有精度阶统一高效的算法。
+The accuracy order is fixed before the program data and polynomial budgets are chosen. The same public parameter family then applies at every security parameter. The result does not require a single algorithm that takes the accuracy order as input and is uniformly efficient across all orders.
 
-## 记号对照
+## Notation
 
-| 论文概念 | Lean 中的具体定义 |
+| Paper concept | Lean definition |
 | --- | --- |
-| 安全参数、精度阶 | `security`、`accuracyOrder` |
-| 校准阶数 (D=4a+267) | `CurrentAFT.Parameters.calibrationOrder accuracyOrder` |
-| `base`、模数 (q)、总维度 | `Parameters.base`、`Parameters.modulus`、`Parameters.dimension` |
-| 实际公平比特采样程序 | `ActualConstructiveSampler.run` |
-| 整数矩阵与偏移 | `CurrentBinaryAffineEmitter.matrix`、`CurrentBinaryAffineEmitter.offset` |
-| 采样器作用于独立 Gaussian 源后的律 | `ActualConstructiveSampler.law`，由 `law_eq` 连接实际程序 |
-| 真实固定标签的均匀零纤维 | `CurrentZeroFiber.uniformFiber` |
-| 数值实现误差 | `ActualConstructiveSampler.numericalError` |
-| 分析中的可忽略余项 | `ActualGaussianRemainder.remainder` |
+| Security parameter and accuracy order | `security`, `accuracyOrder` |
+| Calibration order, D = 4a + 267 | `CurrentAFT.Parameters.calibrationOrder accuracyOrder` |
+| Base, modulus q, and total dimension | `Parameters.base`, `Parameters.modulus`, `Parameters.dimension` |
+| Actual fair-bit sampling program | `ActualConstructiveSampler.run` |
+| Integer matrix and offset | `CurrentBinaryAffineEmitter.matrix`, `CurrentBinaryAffineEmitter.offset` |
+| Output law on an independent Gaussian source | `ActualConstructiveSampler.law`, connected to the executed program by `law_eq` |
+| Uniform law on the fixed label map's actual zero fiber | `CurrentZeroFiber.uniformFiber` |
+| Numerical implementation error | `ActualConstructiveSampler.numericalError` |
+| Negligible analytical remainder | `ActualGaussianRemainder.remainder` |
 
-以上省略的命名空间前缀均为 `CurrentAFT`；根文件中的简写以其实际定义为准。
+Omitted namespace prefixes in this table are `CurrentAFT`. The definitions imported by the root file determine the precise meaning of each name.
 
-## 复现验证
+## Reproduce the checks
 
-安装 [elan](https://github.com/leanprover/elan) 后，在仓库根目录运行：
+Install [elan](https://github.com/leanprover/elan), then run from the repository root:
 
 ```sh
 lake exe cache get
 ./check.sh
 ```
 
-使用已提交的 `lean-toolchain` 和 `lake-manifest.json`，不要先运行 `lake update`。工具链固定为 Lean `v4.29.0-rc1`；mathlib 固定在 `33a7291a345d718bca41f8ae8a9bae365d8f2a3e`。验证入口和审计规则以 `check.sh` 及审计源码为准。
+Use the committed `lean-toolchain` and `lake-manifest.json`; do not run `lake update` first. The toolchain is pinned to Lean `v4.29.0-rc1`, and mathlib is pinned to commit `33a7291a345d718bca41f8ae8a9bae365d8f2a3e`. The executable checks and axiom-audit rules are defined in `check.sh` and the audit source.
 
-本快照的初次构建与审计见 [原始验证记录](provenance/verification.md)；精简后的源码清单和复验见 [清理验证记录](provenance/cleanup-2026-11-04.md)。
+See the [initial verification record](provenance/verification.md) for the original snapshot, and the [cleanup verification record](provenance/cleanup-2026-11-04.md) for the pruned source inventory and subsequent checks.
 
-## 复杂度结论的边界
+## Scope of the complexity guarantee
 
-`work` 来自明确的 Boolean/list/counter 二进制操作计数，包含实际数组读写、随机带解码和中间整数的位长。根定理证明的是这个模型下的多项式最坏成本。**本快照没有另外形式化该模型到标准概率图灵机的通用模拟定理**，因此不声称标准图灵机层面的 PPT 模拟也已由 Lean 验证。
+`work` counts explicit Boolean/list/counter operations on binary data, accounting for array reads and writes, random-tape decoding, and intermediate operand sizes. The root theorem proves polynomial worst-case cost in this model. **This snapshot does not formalize a general simulation of that model by a standard probabilistic Turing machine**, and therefore does not claim that such a simulation has been verified in Lean.
 
-Lean 检查所编码命题的证明；论文与形式化规格的对应仍需阅读根定理及其引用定义。公理审计的允许项为 `propext`、`Classical.choice` 和 `Quot.sound`。
+Lean checks proofs of the encoded statements. Assessing their correspondence with the paper still requires reading the root theorem and its referenced definitions. The axiom audit permits only `propext`, `Classical.choice`, and `Quot.sound`.
 
-## 来源
+## Provenance and source inventory
 
-上游论文仓库提交：`176d128e3361f975a3c7e2f889fdc5f2c96c1d29`。保留的原证明模块逐字节保持不变；根入口及独立验证文件用于本仓库导航与复现。当前只保留 `Theorem99.lean` 及审计所需的完整依赖闭包，共 1794 个 Lean 文件。仍被证明调用的旧命名模块继续保留，不能按文件名中的版本标记删除。
+The upstream manuscript repository commit is `176d128e3361f975a3c7e2f889fdc5f2c96c1d29`. Retained upstream proof modules are unchanged byte for byte. The root theorem and standalone verification files provide navigation and reproducibility for this repository.
 
-原模块文件快照见 [upstream-lean-snapshot.json](provenance/upstream-lean-snapshot.json)，论文对齐记录见 [upstream-manuscript-manifest.json](provenance/upstream-manuscript-manifest.json)。本仓库仅包含证明快照，不包含论文 LaTeX、PDF、`.lake` 缓存或历史 Git 记录；首次构建会在本地生成 `.lake`。
+The repository retains exactly the local dependency closure needed by `Theorem99.lean` and the audit: 1794 Lean files. Modules with historical version names remain when the current proof actually depends on them; version markers in filenames alone do not indicate that a module is unused.
 
-清理时删除了 13 个未被根定理使用的模块，具体路径及原始哈希见 [pruned-modules.json](provenance/pruned-modules.json)。`check.sh` 同时检查保留文件的原始哈希、删除清单和依赖可达性，缺失依赖或新增孤立模块都会使检查失败。
+The original module snapshot is recorded in [upstream-lean-snapshot.json](provenance/upstream-lean-snapshot.json), and the manuscript alignment record is in [upstream-manuscript-manifest.json](provenance/upstream-manuscript-manifest.json). This repository contains the proof snapshot, without the manuscript's LaTeX, PDF, local `.lake` caches, or upstream Git history. The first build creates `.lake` locally.
+
+Dependency cleanup removed 13 modules unused by the root theorem. Their paths and original hashes are listed in [pruned-modules.json](provenance/pruned-modules.json). `check.sh` verifies retained source hashes, the explicit deletion inventory, and dependency reachability. Missing dependencies or additional unreachable local Lean modules cause the checks to fail.
